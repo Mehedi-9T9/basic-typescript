@@ -79,3 +79,18 @@ person =
     age: 24,
     isMarrid: false
 }
+
+
+//function type check
+let myFun: Function
+myFun = () => {
+    console.log("Hello Fun");
+}
+
+//paramerers Types chek
+const sum = (a: number, b: number, c?: number) => {
+    return a + b
+}
+// console.log(sum("2", 5));
+console.log(sum(2, 5));
+console.log(sum(2, 5, 3));
