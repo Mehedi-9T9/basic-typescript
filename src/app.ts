@@ -94,3 +94,23 @@ const sum = (a: number, b: number, c?: number) => {
 // console.log(sum("2", 5));
 console.log(sum(2, 5));
 console.log(sum(2, 5, 3));
+
+
+//aliases type ckeck
+type stringOrNumber = string | number
+type person = {
+    name: string,
+    age: number,
+    isMarried: boolean
+}
+const user = {
+    name: "mehedi",
+    age: 24,
+    isMarried: true
+}
+const typeCheck = (id: stringOrNumber, user: person) => {
+    console.log(id);
+    console.log(user);
+}
+
+console.log(typeCheck(12, user));
