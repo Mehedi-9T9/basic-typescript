@@ -131,3 +131,37 @@ class player {
 }
 const mehedi = new player("mehedi", 23, "marrid")
 console.log(mehedi);
+
+//access modifire
+class student {
+    public name: string;
+    private id: number;
+    readonly class: string;
+
+    constructor(n: string, i: number, c: string) {
+        this.name = n,
+            this.id = i,
+            this.class = c
+    }
+    pressent() {
+        console.log(`${this.name} is attend in class ${this.class}`);
+    }
+}
+const tushar = new student("tushar", 1133, "seven")
+console.log(tushar.name); // this is public access no error
+console.log(tushar.id); // this is private access show error
+console.log(tushar.class); // this is read only access just read but never modify
+tushar.class = "eight" // never modify
+
+//shotcut
+// class student {
+//     constructor({
+//         public name: string;
+//         private id: number;
+//         readonly class: string;
+
+//     })
+//     pressent() {
+//         console.log(`${this.name} is attend in class ${this.class}`);
+//     }
+// }
