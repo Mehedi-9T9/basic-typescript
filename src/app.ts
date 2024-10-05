@@ -114,3 +114,20 @@ const typeCheck = (id: stringOrNumber, user: person) => {
 }
 
 console.log(typeCheck(12, user));
+
+//class singneture
+class player {
+    name: string
+    age: number
+    status: string
+    constructor(n: string, a: number, s: string) {
+        this.name = n,
+            this.age = a,
+            this.status = s
+    }
+    play() {
+        console.log(`${this.name} is playing`);
+    }
+}
+const mehedi = new player("mehedi", 23, "marrid")
+console.log(mehedi);
