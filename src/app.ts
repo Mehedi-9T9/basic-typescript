@@ -177,3 +177,15 @@ const perform = (nayok: nayok) => {
     return text
 }
 //class er jonno o interface use kora hoi
+
+//generics usring
+
+const addID = <T>(id: T) => {
+    const newId = id * 2
+    return newId
+
+
+
+}
+const id = 122
+addID(id)
