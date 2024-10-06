@@ -165,3 +165,15 @@ tushar.class = "eight" // never modify
 //         console.log(`${this.name} is attend in class ${this.class}`);
 //     }
 // }
+
+//interface using
+interface nayok {
+    name: string,
+    movies: string,
+    id: number
+}
+const perform = (nayok: nayok) => {
+    const text = `${nayok.name} is dunsing in ${nayok.movies} movies`
+    return text
+}
+//class er jonno o interface use kora hoi
